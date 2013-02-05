@@ -16,6 +16,16 @@ public class WorkTool extends BaseObject {
 		return manufacturer;
 	}
 	
+	public WorkTool() {
+		super();
+	}
+	
+	public WorkTool(WorkTool obj) {
+		super(obj);
+		if (obj == null) return;
+		type = obj.type;
+		manufacturer = new Manufacturer(obj.manufacturer);
+	}
 	
 
 }
